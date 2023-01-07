@@ -5,41 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      h1 {
+      body {
+        background: rgb(240, 221, 239);
+      }
+
+      header {
+        text-align: center;
+        color: purple;
+        text-transform: capitalize;
+      }
+
+      header h1,
+      h2 {
+        text-shadow: 26px 5px 10px rgba(229, 16, 245, 0.4);
+        text-decoration: underline;
+      }
+
+      h3 {
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      h4 {
+        text-align: center;
+        font-size: 20px;
+      }
+
+      img {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        padding: 3px 5px;
+        border: 3px solid purple;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(102, 2, 95, 0.2);
+      }
+
+      section {
+        font-size: 19px;
+      }
+
+      p {
+        text-align: center;
+        border: 3px solid darkmagenta;
+        border-radius: 30px;
+        padding: 20px;
+      }
+
+      button {
+        margin: 0 auto;
+        display: block;
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px 20px;
+        color: white;
+        background: violet;
+        transition: 1500ms ease-in-out;
+        box-shadow: 37px 6px 38px 15px rgba(102, 2, 95, 0.3);
+      }
+
+      button:hover {
+        color: white;
+        background: purple;
+      }
+
+      footer {
+        font-size: 15px;
         text-align: center;
       }
+
+      footer a {
+        text-decoration: none;
+        color: violet;
+      }
+
+      .container {
+        max-width: 600px;
+        border: 2px solid violet;
+        border-radius: 3px;
+        margin: 0 auto;
+        padding: 30px;
+        background: rgb(248, 199, 248);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .learn-more {
+        color: blueviolet;
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+        color: rgba(102, 2, 95, 0.3);
+      }
     </style>
-    <title>Yoghurt</title>
+    <title>Yoghurt Page</title>
   </head>
   <body>
     <div class="container">
       <header>
         <h1>i love yoghurt</h1>
-        <h2></h2>
+        <h2>especially greek yogurt</h2>
         <img
           src="https://media.product.which.co.uk/prod/images/ar_2to1_900x450/e6e2e614fee1-greek-yog-with-fruit.jpg"
           alt="yoghurt"
         />
-      </header>
 
-      <section>
         <h4>
           Greek-style yoghurt tends to be thicker and creamier than plain
           natural yoghurt, but is it worth plumping for the expensive versions
           or will budget do?
         </h4>
+      </header>
+      <button>Buy some here 🥣</button>
 
-        <p>
-          We compared three Greek yoghurts with very different price points -
-          all sold at Tesco - to find out if paying more pays off.
-          <br />
-          A large panel of consumer taste testers blind-sampled each yoghurt,
-          rating each on smell, look, taste and texture to determine their
-          favourite.
-        </p>
-
-        <button>Buy some here 🥣</button>
-      </section>
       <section>
         <h3>
           What is the difference between Greek yoghurt and Greek-style yoghurt?
@@ -64,32 +146,35 @@
           but you may find it more palatable than plain natural yoghurt, where
           cheaper versions can be quite sharp and watery.
         </p>
-
-        <a
-          href="https://www.liveeatlearn.com/greek-yogurt/"
-          rel="noopener"
-          target="_blank"
-          >Learn how to make it here... 🎓</a
-        >
+        <div class="learn-more">
+          <a
+            href="https://www.liveeatlearn.com/greek-yogurt/"
+            rel="noopener"
+            target="_blank"
+            class="learn-more"
+            >Learn how to make it here...
+          </a>
+        </div>
       </section>
-      <footer>
-        This page is open-sourced on
-        <a
-          href="https://github.com/EmmaH88/basic-shecodes/blob/main/project/index.html"
-          rel="noopener"
-          target="_blank"
-          >GitHub</a
-        >
-        is hosted on
-        <a
-          href="https://yoghurt-project.netlify.app"
-          rel="noopener"
-          target="_blank"
-          >Netlify</a
-        >
-        and was coded by Emma H 😍
-      </footer>
     </div>
+    <footer>
+      This page is open-sourced on
+      <a
+        href="https://github.com/EmmaH88/basic-shecodes/blob/main/project/index.html"
+        rel="noopener"
+        target="_blank"
+        >GitHub</a
+      >
+      is hosted on
+      <a
+        href="https://yoghurt-project.netlify.app"
+        rel="noopener"
+        target="_blank"
+        >Netlify</a
+      >
+      and was coded by Emma H 😍
+    </footer>
+
     <script></script>
   </body>
 </html>
