@@ -86,7 +86,7 @@
         border-radius: 3px;
         margin: 0 auto;
         padding: 30px;
-        background: rgb(248, 199, 248);
+        background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
 
@@ -175,6 +175,17 @@
       and was coded by Emma H 😍
     </footer>
 
-    <script></script>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let flavour = prompt("what is your favourite flavour?");
+
+        alert("Thanks, " + name + "!, we'll be in touch shortly 😊");
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", buy);
+    </script>
   </body>
 </html>
